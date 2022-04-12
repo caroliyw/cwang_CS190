@@ -1,0 +1,19 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+  }
+
+body {
+	height: 100%;
+	margin: 1rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+	background-color:rgb(60, 86, 111)
+
+	/* background-image: linear-gradient(rgb(60, 86, 111), white); */
+}
+
+h1 {
+	color: white;
+}
