@@ -35,6 +35,7 @@ h3 {
 	display: flex;
 	justify-content: center; 
 	align-content: center;
+	text-align: center; 
 }
 
 #Buttons {
