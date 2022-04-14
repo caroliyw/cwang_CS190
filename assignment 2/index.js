@@ -1,5 +1,4 @@
-// TODO: GIVE THE OPTION TO PLAY A SOUND OR AN AUDIO FILE
-// LOOK AT TYPE MY NAME EXAMPLE ONLINE
+// PLAY A SCALE BUTTON
 
 var playsound = false; 
 const soundLength = 1000; 	// tone should hold for 1 second
@@ -50,7 +49,7 @@ function playTone(i) {
 }
 
 function stopTone() {
-	// makes the volume of the tone 0
+	// makes the volume of the tone 0 between tones
 	myGain.gain.setTargetAtTime(0,myAudioContext.currentTime + 0.05,0.025);
 }
 
