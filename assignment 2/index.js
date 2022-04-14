@@ -1,7 +1,9 @@
+// TODO: GIVE THE OPTION TO PLAY A SOUND OR AN AUDIO FILE
+// LOOK AT TYPE MY NAME EXAMPLE ONLINE
 
 var playsound = false; 
 const soundLength = 1000; 	// tone should hold for 1 second
-const soundBreak = 500; 	// wait a third of a second between each tone
+const soundBreak = 500; 	// wait half a second between each tone
 var myAudioContext = new (window.AudioContext || window.webkitAudioContext)();	// sets up audio context
 var myOscillator; 	
 var myGain; 
@@ -38,8 +40,6 @@ function playScale() {
 		delay += soundLength;
 		delay += soundBreak; 
 	}
-
-
 }
 
 function playTone(i) {
@@ -50,6 +50,7 @@ function playTone(i) {
 }
 
 function stopTone() {
+	// makes the volume of the tone 0
 	myGain.gain.setTargetAtTime(0,myAudioContext.currentTime + 0.05,0.025);
 }
 
@@ -83,6 +84,46 @@ function stop() {
 	document.getElementById("stop").classList.add("hidden");
 	clearInterval(interval); 
 	myOscillator.stop(myAudioContext.currentTime);
+	// creates a new audio context
 	setUp();  
+}
 
+
+// TYPING MY NAME CODE
+const thename = document.getElementById("myname");
+thename.addEventListener("input", keystroke);
+
+const soundFiles = [];
+
+for(let i = 1; i <= 8; i++) {
+	// set volume
+}
+
+const namedict = {
+	C: 1,
+	A: 2,
+	R: 3,
+	O: 4,
+	L: 5,
+	I: 6, 
+	N: 7,
+	E: 8,
+	// lowers
+	c: 1,
+	a: 2,
+	r: 3,
+	o: 4,
+	l: 5,
+	i: 6, 
+	n: 7,
+	e: 8,
+	
+}
+// CAROLINE 
+
+function typed(key) {
+	let k = key.data;
+	if (namedict[k]) {
+		// soundFiles[namedict[k]].play(); 
+	}
 }
