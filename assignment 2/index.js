@@ -94,12 +94,23 @@ const thename = document.getElementById("myname");
 thename.addEventListener("input", keystroke);
 
 const soundFiles = [];
+soundFiles[1] = new Audio("audios/glass_breaking.wav");
+soundFiles[2] = new Audio("audios/pygmy_sound.wav"); 
+soundFiles[3] = new Audio("audios/splash.wav"); 
+soundFiles[4] = new Audio("audios/tweet_twoo.wav"); 
+soundFiles[5] = new Audio(); 
+soundFiles[6] = new Audio(); 
+soundFiles[7] = new Audio();
+soundFiles[8] = new Audio(); 
 
-for(let i = 1; i <= 8; i++) {
+
+for(let i = 1; i <= 4; i++) {
 	// set volume
+	soundFiles[i].volume = 0.4;
 }
 
 const namedict = {
+	// uppercase
 	C: 1,
 	A: 2,
 	R: 3,
@@ -108,7 +119,8 @@ const namedict = {
 	I: 6, 
 	N: 7,
 	E: 8,
-	// lowers
+
+	// lowercase
 	c: 1,
 	a: 2,
 	r: 3,
@@ -118,12 +130,12 @@ const namedict = {
 	n: 7,
 	e: 8,
 	
-}
-// CAROLINE 
+};
 
-function typed(key) {
+function keystroke(key) {
 	let k = key.data;
 	if (namedict[k]) {
-		// soundFiles[namedict[k]].play(); 
+		soundFiles[namedict[k]].play();
+
 	}
 }
