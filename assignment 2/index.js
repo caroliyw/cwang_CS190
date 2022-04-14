@@ -98,10 +98,10 @@ soundFiles[1] = new Audio("audios/glass_breaking.wav");
 soundFiles[2] = new Audio("audios/pygmy_sound.wav"); 
 soundFiles[3] = new Audio("audios/splash.wav"); 
 soundFiles[4] = new Audio("audios/tweet_twoo.wav"); 
-soundFiles[5] = new Audio(); 
-soundFiles[6] = new Audio(); 
-soundFiles[7] = new Audio();
-soundFiles[8] = new Audio(); 
+soundFiles[5] = new Audio("audios/cuckoo.wav"); 
+soundFiles[6] = new Audio("audios/beepbeep.wav"); 
+soundFiles[7] = new Audio("audios/cannon.wav");
+soundFiles[8] = new Audio("audios/drink.wav"); 
 
 
 for(let i = 1; i <= 4; i++) {
