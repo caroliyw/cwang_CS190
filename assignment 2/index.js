@@ -1,4 +1,5 @@
-// PLAY A SCALE BUTTON
+// the scale was implemented using frequencies and the audio context 
+// typing sounds were implemented using sound files 
 
 var playsound = false; 
 const soundLength = 1000; 	// tone should hold for 1 second
