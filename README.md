@@ -6,4 +6,6 @@
  In order to fully interact with any assignment that includes a ".maxpat" file, 
  you will need to install and subscribe to Cycling 74's Max programming language and environment (Download [here](https://cycling74.com/products/max/))
  
+ Assignment 2 is the only project that does not use MAX (it was implemented using HTML/CSS/JS).
+ 
  More information about each assignment can be found [here](https://sites.google.com/uci.edu/cyw-comp-music)
